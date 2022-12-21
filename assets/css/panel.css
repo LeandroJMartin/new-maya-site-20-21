@@ -1,0 +1,416 @@
+@font-face {
+    font-family: CalmiusSans;
+    src: url("../fonts/CalmiusSans-High.otf") format("opentype")
+}
+
+@font-face {
+    font-family: CalmiusSans;
+    src: url("../fonts/calmius-sans-extra-bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    font-weight: 900;
+    src: url("../fonts/NoyhGeometric-Black.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-BlackItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    font-weight: 600;
+    src: url("../fonts/NoyhGeometric-Bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-BoldItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-ExtLtIta.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-ExtraLight.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    font-weight: 700;
+    src: url("../fonts/NoyhGeometric-Heavy.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-HeavyItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-Italic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    font-weight: 300;
+    src: url("../fonts/NoyhGeometric-Light.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-LightItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    font-weight: 400;
+    src: url("../fonts/NoyhGeometric-Medium.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-MediumItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-SemiLight.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-SemiLightItalic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "NoyhGeometric";
+    src: url("../fonts/NoyhGeometric-Thin.otf") format("opentype")
+}
+
+@font-face {
+    font-family: NoyhGeometric Thin-Italic;
+    src: url("../fonts/NoyhGeometric-ThinItalic.otf") format("opentype")
+}
+button, input, label, select{
+  color: #003460;
+}
+.container{
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login{
+  background-color: #003460;
+}
+.login .container{
+  height: 100vh;
+  color: white;
+}
+.login .wrap{
+  width: 320px;
+}
+.login .wrap .logo{
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.login .wrap input{
+  background-color: transparent;
+  border: 2px solid;
+  border-color: #fff;
+  color: #003460;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: all .25s ease-in-out;
+  color: white;
+}
+.login .wrap input[type=submit] {
+    background-color: #36d38a;
+    color: #003460;
+    padding: 0 35px;
+    border: 0;
+    height: 44px;
+}
+.login .wrap .link{
+  margin-top: 40px;
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  width: 110px
+}
+.login .wrap a{
+  color: white;
+  opacity: .5;
+  padding: 10px 0;
+  display: inline-block;
+}
+.error{
+  background-color: #A91732;
+  color: white;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+header{
+  background-color: #003460;
+  padding: 40px 15px;
+  width: 100%;
+}
+header .logo {
+  height: auto;
+  display: block;
+  width: 10%;
+  min-width: 100px;
+}
+header .logo img{
+  width: 85px;
+  height: 85px;
+  display: block;
+}
+main{
+  margin: 30px 0;
+}
+nav{
+  padding: 0 15px;
+  width: 60%;
+}
+ul {
+    margin-bottom: 0;
+}
+nav ul li a:hover,
+nav ul li.active a{
+  color: #36d38a;
+}
+nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+nav ul li a{
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.user{
+  width: 30%;
+}
+.user .avatar{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.user p{
+  color: white;
+}
+.breadcrumb{
+  margin: 10px 0 30px 0;
+  display: block;
+}
+.breadcrumb .wrap{
+  background-color: #F3F5F7;
+  padding: 12px 15px;
+}
+.breadcrumb .wrap,
+.breadcrumb .wrap a{
+  color: #777;
+  text-transform: uppercase;
+}
+.breadcrumb .wrap span{
+  padding: 0 7px;
+}
+.breadcrumb .notices.sucsses{
+  display: block;
+  background-color: #C9FED1;
+  padding: 20px;
+  margin: 5px 0;
+  color: #44754C;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.breadcrumb .notices.error{
+  display: block;
+  background-color: #FFD4D4;
+  padding: 20px;
+  margin: 5px 0;
+  color: #9B5252;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.list .itens{
+  margin: 10px 0;
+}
+.list .item{
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-color: #e1e1e1;
+  height: 150px;
+  width: 100%;
+  padding: 25px;
+  background-color: #fafafa;
+}
+.list .item .img{
+  width: 150px;
+  height: 100%;
+  border-radius: 7px;
+}
+.list .item .img img{
+  border-radius: 7px;
+}
+.list .item .title{
+  width: calc(100% - 320px);
+  padding-left: 20px;
+}
+.list .item .title h2{
+  color: #003460;
+}
+.list .item .func{
+  width: 170px;
+}
+.bt{
+  text-align: left;
+}
+.bt a,
+.bt button{
+  background-color: #003460;
+  color: white;
+  padding: 7px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #e1e1e1;
+  display: inline-table;
+  line-height: 0;
+  transition: background .2s;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.bt a:hover,
+.bt button:hover{
+  background-color: #36d38a;
+  color: #003460;
+  border-color: #36d38a;
+}
+.bt a svg,
+.bt button svg{
+  margin-right: 7px;
+  stroke: #ffffff;
+}
+.bt a:hover svg,
+.bt button:hover svg{
+  stroke: #003460;
+}
+.bt a span,
+.bt button span{
+  vertical-align: middle;
+  margin-top: 5px;
+}
+.list .item .func a svg{
+  stroke: #003460;
+}
+.list .item .func {
+  border-left: 1px solid;
+  border-color: #e1e1e1;
+}
+.list .item .func a{
+  padding: 7px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #e1e1e1;
+  display: inline-table;
+  line-height: 0;
+  margin-left: 10px;
+  transition: background .25s;
+}
+.list .item .func a:hover{
+  background-color: #003460;
+}
+.list .item .func a:hover svg{
+  stroke: #ffffff;
+}
+.edit textarea,
+.new textarea{
+  height: 130px;
+}
+.imgmain .img{
+  width: 300px;
+}
+.imgmain .alter #imgmain{
+  display: none;
+}
+.imgmain .alter{
+  padding: 0 20px;
+}
+.edit label{
+  font-size: 1.1rem;
+}
+.list .bt,
+.new .bt{
+  text-align:  right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.edit .bt button span {
+    vertical-align: middle;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.edit .bt {
+    margin-top: 10px;
+}
+.gallery{
+  margin: 30px 0;
+}
+.gallery #gallery{
+  display: none;
+}
+input[type='submit']{
+  background-color: #36d38a;
+  color: #003460;
+  padding: 7px 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #e1e1e1;
+  display: inline-table;
+  line-height: 1;
+  transition: background .2s;
+  height: 40px;
+  width: max-content;
+  text-transform: uppercase;
+}
+input[type='submit']:hover{
+  color: white;
+}
+.gallery .imgs{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #e1e1e1;
+  padding: 20px 0;
+}
+.gallery .imgs .img{
+  width: 20%;
+  height: 170px;
+  padding: 10px;
+}
+footer{
+  height: 100px;
+}

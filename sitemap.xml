@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="https://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/home</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/a-maya</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/portfolio</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/pro-bono</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/contato</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://novo.mayacomunicacao.com.br/single</loc>
+    <lastmod>2021-09-29T16:15:52+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>

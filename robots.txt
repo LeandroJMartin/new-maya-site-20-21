@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Sitemap:https://novo.mayacomunicacao.com.br/
+Disallow: /class/
+Noindex: /class/
