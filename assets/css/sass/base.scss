@@ -1,0 +1,170 @@
+/*-- defining to colors --*/
+$color-green: #36d38a;
+$color-blue: #003460;
+$color-footer: #6392bd;
+$color-white: #ffffff;
+
+
+.color-green{ color: $color-green; }
+.color-blue{ color: $color-blue; }
+
+.bg-color-green{ background-color: $color-green };
+.bg-color-blue{ background-color: $color-blue };
+
+h1, h2, h3, h4 ,h5, h6{
+  font-weight: 700;
+}
+
+a, input[type='submit']{
+  cursor: pointer;
+}
+
+main{
+  background-color: $color-blue;
+  position: relative;
+  padding-left: 0;
+  width: 100%;
+
+  @include xl{
+    padding-left: 85px;
+    width: 100%;
+  }
+}
+.noise{
+  background: url('../assets/img/noise.png');
+  background-repeat: repeat;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+section{
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+.content{
+  width: calc(100% - 50px);
+  height: auto;
+  margin: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
+  float: none;
+
+  @include sm{
+    width: calc(100% - 160px);
+    height: auto;
+    margin: 80px;
+  }
+
+  @include xl{
+    width: calc(100% - 200px);
+    height: auto;
+    margin: 100px;
+  }
+
+  @include rwd(1650){
+    width: 1560px;
+    margin: 100px auto 100px auto;
+    padding: 0;
+  }
+}
+
+.vector{
+  fill: $color-green;
+}
+
+.vec-fixpage{
+  position: fixed;
+  top: 0;
+  right: -65px;
+  height: 100vh;
+  width: 180px;
+  z-index: 99;
+
+  @include xl{
+    position: fixed;
+    top: 0;
+    right: -60px;
+    height: 100vh;
+    width: 270px;
+    z-index: 99;
+  }
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  width: 0;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  width: 0;
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+// Rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin placeholder($color){
+  ::-webkit-input-placeholder{ color: $color; }
+  :-ms-input-placeholder{ color: $color; }
+  ::-ms-input-placeholder{ color: $color; }
+  ::placeholder{ color: $color; }
+  ::-moz-placeholder { color: $color; }
+  :-moz-placeholder { color: $color; }
+}
+
+@mixin max-content{
+  width: intrinsic;
+  width: -webkit-max-content;
+  width: -moz-fit-content;
+  width: -o-max-content;
+  width: max-content;
+}
+
+// @mixin style-inputs($color){
+//   padding: 5px 15px;
+//   border: 1px solid;
+//   border-color: $color;
+//   height: 47px;
+//   margin: 0;
+// }

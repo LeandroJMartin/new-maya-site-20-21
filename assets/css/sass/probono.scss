@@ -1,0 +1,158 @@
+section.pro-bono{
+  overflow: unset;
+
+  .content{
+    margin: 0 auto 0 auto;
+    padding: 100px 0;
+    color: $color-white;
+    padding-top: 30vh;
+
+    .vec-pro-bono{
+      width: 85%;
+      margin-top: 0;
+
+      @include sm{
+        width: 70%;
+        margin-top: 75px;
+      }
+
+      @include md{
+        width: 55%;
+        margin-top: 75px;
+      }
+
+      @include lg{
+        width: 45%;
+        margin-top: 75px;
+      }
+    }
+
+    .wrap{
+      width: 100%;
+      height: 100%;
+      padding: 30px 15px;
+
+      .sticky{
+        position: relative;
+        top: 30px;
+        z-index: -1;
+        margin-bottom: 50px;
+
+        @include sm{
+          position: -webkit-sticky;
+          position: sticky;
+          top: 100px;
+          margin-bottom: auto;
+        }
+
+        @include xl{
+          top: 200px;
+        }
+
+        h1{
+          font-size: 5.5rem;
+          color: $color-green;
+
+          @include md{
+            font-size: 6rem;
+          }
+
+          @include lg{
+            font-size: 7.5rem;
+          }
+
+          @include xl{
+            font-size: 9rem;
+          }
+
+          @include rwd(1650){
+            font-size: 12rem;
+          }
+        }
+      }
+
+      .tx{
+        width: 100%;
+        margin-left: 0;
+
+        @include sm{
+          width: 70%;
+        }
+
+        @include md{
+          width: 57%;
+          margin-left: 43%;
+        }
+
+        h3{
+          @include font-title-content;
+        }
+
+        p{
+          color: $color-white;
+          font-size: 1.4rem;
+          font-weight: 100;
+          margin: 60px 0;
+          line-height: 1.4;
+
+          @include sm{
+            font-size: 1.6rem;
+          }
+
+          @include md{
+            font-size: 1.8rem;
+            line-height: 1.8;
+          }
+
+          @include lg{
+            font-size: 2rem;
+          }
+
+          @include rwd(1650){
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+
+    form{
+      width: 100%;
+      margin: 100px auto 30px auto;
+      @include placeholder($color-white);
+      z-index: 999;
+      position: relative;
+
+      @include lg{
+        width: 60%;
+      }
+
+      input{
+        height: 50px;
+      }
+
+      input,
+      textarea{
+        background-color: transparent;
+        border: 2px solid;
+        border-color: $color-white;
+        color: $color-blue;
+        font-weight: 600;
+        padding: 10px 15px;
+        @include font-paragraph;
+        transition: all .25s ease-in-out;
+      }
+
+      textarea{
+        height: 120px;
+      }
+
+      input[type='submit']{
+        background-color: $color-green;
+        color: $color-blue;
+        padding: 0 35px;
+        border: 0;
+        height: 44px;
+      }
+    }
+  }
+}

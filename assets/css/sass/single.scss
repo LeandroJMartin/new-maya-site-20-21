@@ -1,0 +1,110 @@
+.single{
+  color: $color-white;
+
+  .sec-2{
+
+    p{
+      @include font-paragraph;
+      font-weight: 100;
+    }
+
+    .title{
+      width: 70%;
+    }
+    .arrow{
+      width: 30%;
+
+      .vec{
+        width: 70px;
+        margin: 0 auto;
+
+        @include sm{
+          width: 100px;
+          @include rotate(90);
+        }
+
+        @include xl{
+          @include rotate(0);
+          width: 150px;
+        }
+      }
+    }
+    .text{
+      width: 100%;
+    }
+
+    @include xl{
+
+      .title{
+        width: 30%;
+      }
+      .arrow{
+        width: 20%;
+      }
+      .text{
+        width: 50%;
+      }
+    }
+  }
+
+  .sec-5{
+
+    .img-1{
+      width: 80%;
+      height: auto;
+      margin: 30px auto;
+    }
+
+    .img-2{
+      width: 65%;
+      height: auto;
+      margin: 30px auto;
+    }
+
+    .img-3{
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .sec-7{
+    padding-bottom: 70px;
+
+    @include xl{
+      padding-bottom: 0;
+    }
+
+    h2{
+      @include font-main;
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: 2rem;
+
+      @include sm{
+        font-size: 4.8rem;
+      }
+    }
+
+    p{
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    .buttons{
+
+      a{
+        padding: 15px 30px 10px 30px;
+        background-color: $color-green;
+        color: $color-blue;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include font-paragraph;
+        margin: 10px 5px;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,372 @@
+.menu{
+  @include translate(0, 100%);
+  position: fixed;
+  z-index: 9999;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+  .base{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+    align-items: center;
+
+    .logo{
+      width: 20%;
+      height: auto;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .social{
+      width: 40%;
+      text-align: center;
+      display: inline-flex;
+
+
+      a{
+        margin: 0;
+        //
+        // @include rwd(480){
+        //   margin: 0 20px 0 0;
+        // }
+
+        svg{
+          width: 17px;
+          height: auto;
+          fill: $color-blue;
+          display: block;
+          margin: 0 5px;
+          transition: all 0.2s ease-out;
+          @include scale(1);
+        }
+
+        &:hover{
+
+          svg{
+            fill: $color-white;
+            @include scale(1.15);
+            -webkit-filter: drop-shadow(-4px 3px 2px rgba(0, 56, 100, 0.15));
+            filter: drop-shadow(-5px 3px 2px rgba(0, 56, 100, 0.15));
+          }
+        }
+      }
+    }
+
+    .contact{
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+
+      .icons{
+        text-align: center;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        a{
+          margin: 0 0 0 10px;
+
+          @include rwd(480){
+            margin: 0 20px 0 0;
+          }
+
+          svg{
+            width: 17px;
+            height: auto;
+            fill: $color-blue;
+            display: block;
+            margin: 10px auto;
+            transition: all 0.2s ease-out;
+            @include scale(1);
+          }
+
+          &:nth-child(2){
+
+            svg{
+              width: 20px;
+            }
+          }
+
+          &:hover{
+
+            svg{
+              fill: #ffffff;
+              @include scale(1.15);
+              -webkit-filter: drop-shadow(-4px 3px 2px rgba(0, 56, 100, 0.15));
+              filter: drop-shadow(-5px 3px 2px rgba(0, 56, 100, 0.15));
+            }
+          }
+        }
+      }
+
+      .location{
+        display: none;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        color: $color-blue;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .toggle{
+    width: auto;
+    text-align: center;
+    width: 100%;
+
+    button{
+      width: 50px;
+      height: auto;
+      padding: 20px 11px;
+      stroke: $color-blue;
+      display: block;
+      margin: 40px auto 0 auto;
+      transition: all 0.2s ease-in-out;
+      transform: rotate(-90deg);
+
+      svg{
+        width: 25px;
+      }
+
+      &:hover{
+
+        svg{
+          stroke: #ffffff;
+        }
+      }
+    }
+  }
+
+  .navbar{
+    width: 100%;
+    padding-left: 0;
+    margin-top: 30px;
+    text-align: center;
+
+    a{
+      color: $color-blue;
+      padding: 7px 0;
+      display: block;
+      @include max-content;
+      text-transform: uppercase;
+      @include font-main;
+      font-size: 3.5rem;
+      transition: all 0.3s ease-out;
+      text-align: center;
+      margin: 0 auto;
+
+      &:hover{
+        color: $color-white;
+        @include translate(10px, 0);
+      }
+
+      @include sm{
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  @include sm{
+    padding: 40px;
+  }
+
+  @include md{
+
+    @include translate(0, 100%);
+    padding: 80px;
+
+    .base{
+      width: 35%;
+      display: block;
+
+      .logo{
+        width: 230px;
+        margin: 60px auto;
+        display: block;
+      }
+
+      .social{
+        width: auto;
+        display: block;
+
+        a{
+
+          svg{
+            width: 18px;
+            margin: 30px auto;
+          }
+        }
+      }
+
+      .contact{
+        width: 100%;
+        display: block;
+
+        .icons{
+          display: block;
+
+          a{
+            margin: 0;
+
+            svg{
+              width: 18px;
+              margin: 25px auto;
+            }
+          }
+        }
+
+        .location{
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .toggle{
+      width: 65%;
+      text-align: right;
+      margin-left: 35%;
+
+      button{
+        width: 50px;
+        height: auto;
+        padding: 20px 11px;
+        stroke: #003460;
+        display: block;
+        margin: 0 auto;
+        transition: all .2s ease-in-out;
+        transform: rotate(-90deg);
+
+        svg{
+          width: 100%;
+        }
+
+        &:hover{
+
+          svg{
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+
+    .navbar{
+      width: 65%;
+      padding-left: 10%;
+      margin-top: 0;
+
+      a{
+        padding: 10px 15px;
+        font-size: 5rem;
+
+        &:hover{
+          color: $color-white;
+          @include translate(10px, 0);
+        }
+      }
+    }
+  }
+
+  @include xl{
+
+    @include translate(-100%, 0);
+    padding: 80px;
+
+    .base{
+      width: 20%;
+      display: block;
+
+      .logo{
+        width: 230px;
+        margin: 60px auto;
+        display: block;
+      }
+
+      .social{
+        width: auto;
+        display: block;
+
+        a{
+
+          svg{
+            width: 18px;
+            margin: 30px auto;
+          }
+        }
+      }
+
+      .contact{
+        width: 100%;
+        display: block;
+
+        .icons{
+          display: block;
+
+          a{
+
+            svg{
+              width: 18px;
+              margin: 25px auto;
+            }
+          }
+        }
+
+        .location{
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .toggle{
+      width: auto;
+      text-align: center;
+      margin-left: 15px;
+
+      button{
+        width: 50px;
+        height: auto;
+        padding: 20px 11px;
+        stroke: $color-blue;
+        display: block;
+        margin: 25px auto;
+        transition: all 0.2s ease-in-out;
+        transform: rotate(0deg);
+
+        svg{
+          width: 100%;
+        }
+
+        &:hover{
+
+          svg{
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+
+    .navbar{
+      width: 65%;
+      padding-left: 0;
+      margin-top: 0;
+
+      a{
+        padding: 10px 15px;
+        font-size: 7.2rem;
+
+        &:hover{
+          color: $color-white;
+          @include translate(10px, 0);
+        }
+      }
+    }
+  }
+}

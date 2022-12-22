@@ -1,0 +1,80 @@
+.about{
+
+  .content{
+
+    img{
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .wrap{
+      height: 100%;
+      overflow: auto;
+      padding: 0 15px;
+
+      @include rwd(380){
+        padding: 0 30px;
+      }
+
+
+      p{
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin: 60px 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  @include md{
+    height: 100vh;
+
+    .content{
+
+      img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .wrap{
+        height: 500px;
+        padding: 30px 15px;
+
+
+        p{
+          font-size: 1.7rem;
+          margin: 60px 0;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+
+  @include xl{
+    height: 100vh;
+
+    .content{
+
+      img{
+        width: 65%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .wrap{
+        height: 700px;
+        padding: 30px 15px;
+
+
+        p{
+          font-size: 2.2rem;
+          margin: 60px 0;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,605 @@
+.block-1{
+  padding-bottom: 217px;
+
+  @include sm{
+    padding-bottom: 150px;
+  }
+
+  .vector{
+    width: 15%;
+    height: auto;
+
+    @include sm{
+      width: 15%;
+    }
+  }
+  .vec-a,
+  .vec-b,
+  .vec-c,
+  .vec-d{
+    position: absolute;
+    z-index: -1;
+  }
+  .vec-a{
+    top: 112px;
+    left: 37%;
+    bottom: auto;
+    right: auto;
+    @include rotate(180);
+
+    @include sm{
+      top: 125px;
+      left: 56%;
+    }
+  }
+  .vec-b{
+    top: auto;
+    left: 8px;
+    bottom: 115px;
+    right: auto;
+    @include rotate(180);
+
+    @include sm{
+      left: 35px;
+    }
+  }
+  .vec-c{
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: -1.5%;
+    @include rotate(180);
+  }
+  .vec-d{
+    width: 60%;
+    top: auto;
+    left: auto;
+    bottom: 117px;
+    right: 11%;
+    z-index: 9;
+
+    @include sm{
+      width: 55%;
+      bottom: 115px;
+      right: 15%;
+    }
+  }
+
+  .wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $color-white;
+    z-index: 9;
+
+    .title h1{
+      padding: 0 25px 25px 0;
+      background-color: $color-blue;
+      display: inline-block;
+      @include max-content;
+
+      @include sm{
+        padding: 0 40px 40px 40px;
+      }
+    }
+
+    .txt{
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: -230px;
+      left: auto;
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+
+      p{
+        font-size: 0.9rem;
+        line-height: 1.4;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      @include sm{
+        bottom: -190px;
+
+        p{
+          font-size: 1rem;
+          line-height: 1.4;
+        }
+      }
+
+      @include rwd(870){
+        width: 30%;
+        bottom: 53px;
+
+      }
+
+      @include rwd(1650){
+        position: absolute;
+        top: auto;
+        right: 9%;
+        bottom: 12%;
+        left: auto;
+        width: 20%;
+        height: auto;
+        padding-right: 15px;
+
+        p{
+          font-size: 1.4rem;
+          line-height: 2;
+        }
+      }
+    }
+
+    @include rwd(870){
+      position: absolute;
+      padding-bottom: 0;
+    }
+  }
+
+  .banner{
+    top: 110px;
+
+    @include sm{
+      top: 90px;
+    }
+
+    .logo{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      width: 97px;
+      z-index: 9;
+
+      @include sm{
+        top: 0;
+        right: 0;
+        width: 150px;
+      }
+
+      .icon-logo{
+        width: 60px;
+        height: auto;
+        margin-left: 35px;
+        margin-top: -12px;
+        @include rotate(12);
+
+        @include sm{
+          width: 90px;
+          margin-left: 70px;
+          margin-top: 2px;
+        }
+      }
+
+      .tx{
+        position: absolute;
+        top: -40px;
+        right: -15px;
+        bottom: auto;
+        left: auto;
+        -webkit-animation:spin 15s linear infinite;
+        -moz-animation:spin 15s linear infinite;
+        animation:spin 15s linear infinite;
+
+        @-moz-keyframes spin {
+            100% { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform:rotate(360deg);
+            }
+        }
+
+        @include sm{
+          position: absolute;
+          top: -40px;
+          right: -40px;
+        }
+      }
+
+      @include xl{
+        width: 200px;
+
+        .icon-logo{
+          width: 120px;
+          height: auto;
+          margin-left: 80px;
+          margin-top: 15px;
+        }
+
+        .tx{
+          top: -40px;
+          right: -40px;
+          bottom: auto;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  @include rwd(870){
+    padding-bottom: 0;
+
+    .vec-a{
+      top: 40px;
+      left: 48%;
+    }
+    .vec-b{
+      left: 60px;
+      bottom: 40px;
+    }
+    .vec-c{
+      top: 35%;
+      left: auto;
+      bottom: auto;
+      right: -3.5%;
+      @include rotate(180);
+    }
+    .vec-d{
+      bottom: 48px;
+    }
+
+    .banner{
+      top: 0;
+    }
+  }
+}
+
+.block-2{
+  position: relative;
+  padding-bottom: 30px;
+
+  @include sm {
+    padding-bottom: 0;
+  }
+
+  @include md{
+    padding-bottom: 60px;
+  }
+
+  @include xl{
+    padding-bottom: 80px;
+  }
+
+  .content{
+    height: auto;
+    color: $color-white;
+
+    .wrap{
+
+      .seta{
+        margin: 0 20px 0 90px;
+        width: 35px;
+        height: 52px;
+
+        svg{
+          width: 100%;
+          height: auto;
+          fill: $color-green;
+        }
+
+        @include sm{
+          width: 47px;
+          height: 71px;
+        }
+
+        @include md {
+          margin: 80px 45px 0 45px;
+          width: 55px;
+          height: 83px;
+        }
+        @include rwd(1650){
+          width: 83px;
+          height: 124px;
+          margin: 90px 60px 0 60px;
+        }
+      }
+
+      span{
+        @include font-base;
+        @include font-title-content;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        color: $color-green;
+        font-weight: 300;
+
+        @include sm{
+          letter-spacing: 15px;
+        }
+      }
+
+      h1{
+        font-size: 4rem;
+        display: block;
+        width: 100%;
+
+        @include sm {
+          font-size: 4.5rem;
+          display: inline-block;
+          width: auto;
+        }
+
+        @include md {
+          font-size: 5rem;
+        }
+
+        @include xl {
+          font-size: 7rem;
+        }
+        @include rwd(1650){
+          font-size: 8.7rem;
+        }
+      }
+
+      ul{
+        text-align: left;
+        list-style: none;
+        height: 90px;
+        overflow: hidden;
+        line-height: 1;
+        margin-top: 26px;
+        margin-left: 0;
+
+        li{
+          @include font-subtitle;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom:20px;
+          height: 80px;
+
+          &:first-child{
+            animation: show 10s ease-in-out infinite;
+          }
+        }
+
+        @keyframes show {
+          0% {margin-top:-500px;}
+          5% {margin-top:-400px;}
+          20% {margin-top:-400px;}
+          25% {margin-top:-300px;}
+          40% {margin-top:-300px;}
+          45% {margin-top:-200px;}
+          60% {margin-top:-200px;}
+          65% {margin-top:-100px;}
+          80% {margin-top:-100px;}
+          85% {margin-top:0px;}
+          99% {margin-top:0px;}
+          100% {margin-top:-500px;}
+        }
+
+        @include sm{
+          margin-left: 66%;
+          margin-top: -30px;
+        }
+
+        @include md {
+          margin-left: 0;
+          margin-top: 60px;
+        }
+
+        @include lg{
+          margin-top: 55px;
+        }
+      }
+    }
+
+    @include rwd(1650){
+      width: 67%;
+    }
+  }
+
+  .vec-a,
+  .vec-b{
+    position: absolute;
+    z-index: -1;
+  }
+
+  .vec-a{
+    top: 0;
+    left: auto;
+    bottom: auto;
+    right: -60px;
+    width: 15%;
+  }
+
+  .vec-b{
+    top: auto;
+    left: 0;
+    bottom: -7px;
+    right: auto;
+    width: 20%;
+
+    @include sm{
+      bottom: -40px;
+    }
+  }
+}
+
+.block-3{
+  width: 100%;
+  position: relative;
+
+
+  .parallax {
+    /* The image used */
+    background-image: url("../img/video-home.jpg");
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include sm{
+      min-height: 700px;
+    }
+    @include md{
+      min-height: 900px;
+    }
+  }
+
+  .wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    svg{
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+      fill: $color-green;
+    }
+  }
+}
+
+.block-4{
+  padding-bottom: 70px;
+
+  @include sm{
+    padding-bottom: 40px;
+  }
+
+  .vec-a,
+  .vec-b{
+    position: absolute;
+    z-index: -1;
+  }
+
+  .wrap{
+    padding-top: 60px;
+    position: relative;
+
+    .vec-a{
+      top: 0;
+      left: 0;
+      bottom: auto;
+      right: auto;
+      width: 37%;
+      height: auto;
+      z-index: 9;
+
+      @include sm{
+        width: 25%;
+      }
+
+      @include lg{
+        top: -5%;
+      }
+    }
+
+    .title{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+
+      h1{
+        padding: 0 0 25px 25px;
+        display: block;
+        background-color: $color-blue;
+        color: $color-white;
+        margin-top: 0;
+
+        @include sm{
+          padding: 0 0 40px 40px;
+        }
+      }
+
+      @include lg{
+        top: 0;
+        right: 0;
+
+        h1{
+          padding: 40px;
+          margin-top: 50px;
+        }
+      }
+    }
+
+    span{
+      color: $color-white;
+      @include font-buttons;
+      padding: 0 5px;
+      display: none;
+
+      @include lg{
+        display: inline-block;
+      }
+    }
+
+    a{
+      text-transform: uppercase;
+      color: $color-green;
+      @include font-buttons;
+      margin-top: 45px;
+      display: block;
+      line-height: 1;
+      letter-spacing: 2px;
+
+      @include sm{
+        letter-spacing: 3px;
+      }
+
+      svg{
+        width: 40px;
+        height: auto;
+        fill: $color-green;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      &:last-child{
+        color: $color-white;
+        margin-top: 17px;
+      }
+
+      @include lg{
+        display: inline-block;
+
+        &:last-child{
+          color: $color-white;
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  .vec-b{
+    top: auto;
+    left: auto;
+    bottom: 157px;
+    right: 0;
+    width: 20%;
+
+    @include sm{
+      bottom: 120px;
+      right: 0;
+      width: 17%;
+    }
+
+    @include xl{
+      bottom: 45px;
+    }
+  }
+
+  @include xl{
+    padding-bottom: 0;
+  }
+}

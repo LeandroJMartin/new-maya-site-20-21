@@ -1,0 +1,247 @@
+.contact{
+
+  .content{
+    margin: 0 auto 0 auto;
+    padding: 100px 0 0 0;
+    color: $color-white;
+
+    h1{
+      font-size: 4rem;
+      color: $color-green;
+
+      @include md{
+        font-size: 5.5rem;
+      }
+
+      @include md{
+        font-size: 6rem;
+      }
+
+      @include lg{
+        font-size: 7.5rem;
+      }
+
+      @include xl{
+        font-size: 9rem;
+      }
+
+      @include rwd(1650){
+        font-size: 12rem;
+      }
+    }
+
+    .wrap{
+      margin-top: 45px;
+      position: relative;
+
+      form{
+        margin: 0 auto;
+        @include placeholder($color-white);
+
+        input{
+          height: 50px;
+        }
+
+        input,
+        textarea{
+          background-color: transparent;
+          border: 2px solid;
+          border-color: $color-white;
+          color: $color-blue;
+          font-weight: 600;
+          padding: 10px 15px;
+          @include font-paragraph;
+          transition: all .25s ease-in-out;
+        }
+
+        textarea{
+          height: 120px;
+        }
+
+        input[type='submit']{
+          background-color: $color-green;
+          color: $color-blue;
+          padding: 0 35px;
+          border: 0;
+          height: 44px;
+        }
+      }
+
+      .pad{
+        margin-left: 0;
+        width: 100%;
+
+        @include sm{
+          margin-left: 15px;
+          width: calc(50% - 15px);
+        }
+      }
+
+      .wraper{
+        width: 100%;
+        height: 100%;
+        padding: 30px 15px;
+
+        p,
+        address{
+          font-size: 1.4rem;
+          font-weight: 100;
+
+          @include sm{
+            font-size: 1.6rem;
+          }
+
+          @include xl{
+            font-size: 1.8rem;
+          }
+
+          @include rwd(1650){
+            font-size: 2rem;
+          }
+        }
+
+        .phone{
+          font-size: 2.2rem;
+          font-weight: 600;
+
+          @include sm{
+            font-size: 3.2rem;
+          }
+
+          span{
+            font-weight: 100;
+            font-size: 1.6rem;
+
+            @include sm{
+              font-size: 2rem;
+            }
+          }
+        }
+
+        .icons{
+          display: inline-flex;
+
+          .icon {
+            position: relative;
+            margin: 20px 15px 0 15px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            .tooltip {
+              position: absolute;
+              top: 0;
+              font-size: 1.2rem;
+              background-color: $color-green;
+              color: $color-blue;
+              padding: 5px 8px;
+              border-radius: 5px;
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+              opacity: 0;
+              pointer-events: none;
+              transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+              &::before {
+                position: absolute;
+                content: "";
+                height: 8px;
+                width: 8px;
+                background-color: $color-green;
+                bottom: -3px;
+                left: 50%;
+                transform: translate(-50%) rotate(45deg);
+                transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              }
+            }
+
+            &:hover .tooltip {
+              top: -45px;
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+            }
+
+            &:hover .tooltip {
+              text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+            }
+
+            &:not(:last-child){
+              margin-right: 20px;
+            }
+
+            svg{
+              width: 18px;
+              height: auto;
+              fill: $color-white;
+              transition: all 0.2s ease-out;
+              @include scale(1);
+              vertical-align: middle;
+            }
+
+            &:nth-child(2){
+
+              svg{
+                width: 23px;
+              }
+            }
+
+            &:hover{
+
+              svg{
+                fill: $color-green;
+                @include scale(1.5);
+                -webkit-filter: drop-shadow(-4px 3px 2px rgba(0, 56, 100, 0.15));
+                filter: drop-shadow(-5px 3px 2px rgba(0, 56, 100, 0.15));
+              }
+            }
+          }
+        }
+
+        .tx{
+          width: 50%;
+          margin-left: 50%;
+
+          h3{
+            @include font-title-content;
+          }
+
+          p{
+            color: $color-white;
+            font-size: 2.2rem;
+            font-weight: 100;
+            margin: 60px 0;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+
+    .vec{
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 40px;
+
+      @include sm{
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+
+      @include md{
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+
+      @include xl{
+        width: 50%;
+        margin-top: 90px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

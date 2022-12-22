@@ -1,0 +1,183 @@
+@font-face {
+    font-family: CalmiusSans;
+    src: url("../fonts/CalmiusSans-High.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CalmiusSans;
+    src: url("../fonts/calmius-sans-extra-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'NoyhGeometric';
+    font-weight: 900;
+    src: url('../fonts/NoyhGeometric-Black.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-BlackItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    font-weight: 600;
+    src: url('../fonts/NoyhGeometric-Bold.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-BoldItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-ExtLtIta.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-ExtraLight.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    font-weight: 700;
+    src: url('../fonts/NoyhGeometric-Heavy.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-HeavyItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-Italic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    font-weight: 300;
+    src: url('../fonts/NoyhGeometric-Light.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-LightItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    font-weight: 400;
+    src: url('../fonts/NoyhGeometric-Medium.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-MediumItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-SemiLight.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-SemiLightItalic.otf') format("opentype");
+}
+@font-face {
+    font-family: 'NoyhGeometric';
+    src: url('../fonts/NoyhGeometric-Thin.otf') format("opentype");
+}
+@font-face {
+    font-family: NoyhGeometric Thin-Italic;
+    src: url('../fonts/NoyhGeometric-ThinItalic.otf') format("opentype");
+}
+
+@mixin font-title {
+
+  font-size: 2.4em;
+
+  @include sm {
+    font-size: 2.8em;
+  }
+
+  @include md {
+    font-size: 3.6em;
+  }
+
+  @include xl {
+    font-size: 4.5em;
+  }
+
+  @include rwd(1650){
+    font-size: 6.2em;
+  }
+}
+
+@mixin font-title-content {
+
+  font-size: 1.6rem;
+
+  @include sm {
+    font-size: 2.4rem;
+  }
+
+  @include lg {
+    font-size: 3rem;
+  }
+}
+
+@mixin font-subtitle {
+
+  font-size: 1.4rem;
+
+  @include sm {
+    font-size: 1.8rem;
+  }
+
+  @include md {
+    font-size: 2.2rem;
+  }
+
+  @include xl {
+    font-size: 2.8rem;
+  }
+
+  @include rwd(1650){
+    font-size: 3.5em;
+  }
+}
+
+@mixin font-paragraph {
+
+  font-size: 1rem;
+
+  @include sm {
+    font-size: 1.15rem;
+  }
+
+  @include lg {
+    font-size: 1.3rem;
+  }
+}
+
+@mixin font-buttons {
+
+  font-size: 1.2rem;
+
+  @include sm {
+    font-size: 1.6rem;
+  }
+
+  @include xl {
+    font-size: 2rem;
+  }
+}
+
+@mixin font-main {
+  font-family: 'CalmiusSans', sans-serif;
+}
+
+@mixin font-base {
+  font-family: 'NoyhGeometric', sans-serif;
+}
+
+h1{
+  @include font-title;
+  @include font-main;
+  text-transform: uppercase;
+  line-height: 1;
+}

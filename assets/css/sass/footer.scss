@@ -1,0 +1,17 @@
+
+.footer-dir{
+  padding: 15px 0;
+
+  p{
+    font-weight: 600;
+    line-height: middle;
+    font-size: 1rem;
+
+    svg{
+      width: 25px;
+      height: 25px;
+      fill: $color-footer;
+      vertical-align: middle;
+    }
+  }
+}

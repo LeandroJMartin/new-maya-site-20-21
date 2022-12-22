@@ -1,0 +1,31 @@
+.oops{
+  height: 100vh;
+
+  .error-404{
+    text-align: center;
+    color: $color-white;
+
+    .bt-404{
+
+      a{
+        padding: 15px 30px 10px 30px;
+        background-color: $color-green;
+        color: $color-blue;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include font-paragraph;
+        margin: 10px 5px;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+  }
+
+  .vec{
+    width: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 25%;
+    left: 25%;
+  }
+}
